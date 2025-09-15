@@ -53,7 +53,7 @@ export default function Home() {
 
   const skills = [
     'HTML5', 'CSS', 'JavaScript', 'React', 'Python', 'Django', 'n8n', 'Power Automate',
-    'WordPress', 'Jira', 'SQL Server', 'PostgreSQL', 'Jira', 'Git', 'GitHub', 'Azure DevOps',
+    'WordPress', 'Jira', 'SQL Server', 'PostgreSQL', 'Git', 'GitHub', 'Azure DevOps',
     'Power BI', 'Excel', 'Analytics', 'BI', 'QA', 'Testes', 'Automações'
   ];
 
