@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 
 export default function Home() {
+  const base = import.meta.env.BASE_URL;
+  
   useEffect(() => {
     // Smooth scrolling for navigation links
     const handleAnchorClick = (e: Event) => {
@@ -113,7 +115,7 @@ export default function Home() {
             </div>
             
             <div className="flex justify-center lg:justify-end">
-              <img src="src/components/img/hero/bernalves.png" 
+              <img src={`${base}img/hero/bernalves.png`} 
                    alt="Bernardo Henrique" 
                    className="w-full max-w-md h-auto rounded-xl shadow-lg object-cover"
                    data-testid="img-profile" />
@@ -148,7 +150,7 @@ export default function Home() {
               </div>
               
               <div className="flex justify-center lg:justify-end">
-                <img src="src/components/img/about/pitching.jpg"
+                <img src={`${base}img/about/pitching.jpg`}
                      alt="Pitching" 
                      className="w-full max-w-md h-auto rounded-xl shadow-lg"
                      data-testid="img-coding" />
@@ -182,7 +184,7 @@ export default function Home() {
                    className="block hover:scale-105 transition-transform" 
                    target="_blank"
                    data-testid="link-gcp-cert">
-                  <img src="src/components/img/badges/white_belt.png" 
+                  <img src={`${base}img/badges/white_belt.png`} 
                        alt="FM2S - LEAN SIX SIGMA WHITE BELT" 
                        className="w-24 h-24 object-contain"
                        data-testid="img-gcp-badge" />
@@ -191,7 +193,7 @@ export default function Home() {
                    className="block hover:scale-105 transition-transform" 
                    target="_blank"
                    data-testid="link-gcp-cert">
-                  <img src="src/components/img/badges/bi.png" 
+                  <img src={`${base}img/badges/bi.png`} 
                        alt="FIAP - BUSINESS INTELLIGENCE" 
                        className="w-24 h-24 object-contain"
                        data-testid="img-gcp-badge" />
@@ -200,7 +202,7 @@ export default function Home() {
                    className="block hover:scale-105 transition-transform" 
                    target="_blank"
                    data-testid="link-gcp-cert">
-                  <img src="src/components/img/badges/python.png" 
+                  <img src={`${base}img/badges/python.png`} 
                        alt="FIAP - PYTHON" 
                        className="w-24 h-24 object-contain"
                        data-testid="img-gcp-badge" />
@@ -220,7 +222,7 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {/* Project 1: Superdados */}
               <div className="bg-card border border-border rounded-xl overflow-hidden hover:shadow-lg transition-shadow" data-testid="card-project-superdados">
-                <img src="src/components/img/projects/superdados.png"
+                <img src={`${base}img/projects/superdados.png`}
                      alt="Site Superdados" 
                      className="w-full h-48 object-cover"
                      data-testid="img-project-superdados" />
@@ -242,7 +244,7 @@ export default function Home() {
 
               {/* Project 2: Bound */}
               <div className="bg-card border border-border rounded-xl overflow-hidden hover:shadow-lg transition-shadow" data-testid="card-project-bound">
-                <img src="src/components/img/projects/bound.png"
+                <img src={`${base}img/projects/bound.png`}
                      alt="E-commerce Bound" 
                      className="w-full h-48 object-cover"
                      data-testid="img-project-n8n" />
@@ -264,7 +266,7 @@ export default function Home() {
               
               {/* Project 3: n8n */}
               <div className="bg-card border border-border rounded-xl overflow-hidden hover:shadow-lg transition-shadow" data-testid="card-project-n8n">
-                <img src="src/components/img/projects/n8n.png"
+                <img src={`${base}img/projects/n8n.png`}
                      alt="Automações n8n" 
                      className="w-full h-48 object-cover"
                      data-testid="img-project-n8n" />
@@ -286,7 +288,7 @@ export default function Home() {
               
               {/* Project 4: Power Automate */}
               <div className="bg-card border border-border rounded-xl overflow-hidden hover:shadow-lg transition-shadow" data-testid="card-project-power-automate">
-                <img src="src/components/img/projects/power_Automate.png"
+                <img src={`${base}img/projects/power_Automate.png`}
                      alt="Automações power automate" 
                      className="w-full h-48 object-cover"
                      data-testid="img-project-power-automate" />
@@ -308,7 +310,7 @@ export default function Home() {
 
               {/* Project 5: Dashbords de BI */}
               <div className="bg-card border border-border rounded-xl overflow-hidden hover:shadow-lg transition-shadow" data-testid="card-project-dashboards">
-                <img src="src/components/img/projects/dashboards.png"
+                <img src={`${base}img/projects/dashboards.png`}
                      alt="Dashboards de BI" 
                      className="w-full h-48 object-cover"
                      data-testid="img-project-dashboards" />
@@ -330,7 +332,7 @@ export default function Home() {
               
               {/* Project 6: Analytics em Excel */}
               <div className="bg-card border border-border rounded-xl overflow-hidden hover:shadow-lg transition-shadow" data-testid="card-project-analytics">
-                <img src="src/components/img/projects/analytics.png"
+                <img src={`${base}img/projects/analytics.png`}
                      alt="Analytics em Excel" 
                      className="w-full h-48 object-cover"
                      data-testid="img-project-analytics" />
@@ -352,7 +354,7 @@ export default function Home() {
               
               {/* Project 6: DBA e Queries */}
               <div className="bg-card border border-border rounded-xl overflow-hidden hover:shadow-lg transition-shadow" data-testid="card-project-sql">
-                <img src="src/components/img/projects/sql.png"
+                <img src={`${base}img/projects/sql.png`}
                      alt="SQL Queries e DBA" 
                      className="w-full h-48 object-cover"
                      data-testid="img-project-sql" />
