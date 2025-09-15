@@ -37,7 +37,7 @@ jobs:
       run: npm ci
       
     - name: Build for production
-      run: npx vite build --base=/rest-express/
+      run: npx vite build --base=/portfolio/
       env:
         NODE_ENV: production
         
