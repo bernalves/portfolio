@@ -220,7 +220,7 @@ export default function Home() {
             <h2 className="text-3xl lg:text-4xl font-bold text-center" data-testid="text-projects-title">Projetos</h2>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              {/* Project 1: Superdados */}
+              {/* Project: Superdados */}
               <div className="bg-card border border-border rounded-xl overflow-hidden hover:shadow-lg transition-shadow" data-testid="card-project-superdados">
                 <img src={`${base}img/projects/superdados.png`}
                      alt="Site Superdados" 
@@ -242,7 +242,7 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Project 2: Bound */}
+              {/* Project: Bound */}
               <div className="bg-card border border-border rounded-xl overflow-hidden hover:shadow-lg transition-shadow" data-testid="card-project-bound">
                 <img src={`${base}img/projects/bound.png`}
                      alt="E-commerce Bound" 
@@ -264,7 +264,7 @@ export default function Home() {
                 </div>
               </div>
               
-              {/* Project 3: n8n */}
+              {/* Project: n8n */}
               <div className="bg-card border border-border rounded-xl overflow-hidden hover:shadow-lg transition-shadow" data-testid="card-project-n8n">
                 <img src={`${base}img/projects/n8n.png`}
                      alt="Automações n8n" 
@@ -285,8 +285,30 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+
+              {/* Project: Gestão de Projetos */}
+              <div className="bg-card border border-border rounded-xl overflow-hidden hover:shadow-lg transition-shadow" data-testid="card-project-projetos">
+                <img src={`${base}img/projects/projetos.png`}
+                     alt="Gestão de Projetos" 
+                     className="w-full h-48 object-cover"
+                     data-testid="img-project-projetos" />
+                <div className="p-6 space-y-4">
+                  <h3 className="text-xl font-bold text-card-foreground" data-testid="text-project-projetos-title">Gestão de Projetos & Metodologias Ágeis</h3>
+                  <p className="text-muted-foreground" data-testid="text-project-projetos-description">
+                    Aplicação prática de SCRUM, OKRs e LEAN para otimização de processos e aumento da eficiência operacional. Tenho domínio de ferramentas de gestão como Jira, Azure DevOps e Notion, para acompanhar sprints, gerir backlog e documentação colaborativa, garantindo entregas no prazo e dentro do escopo definido.
+                  </p>
+                  <p><span className="text-primary">Lean, Six Sigma, Notion, Jira, Azure DevOps</span></p>
+                  <div className="flex flex-wrap gap-2">
+                    {/* <a href="https://bernalves.notion.site/n8n-21605a27e6c88083ad48cbe0b1dd7600?source=copy_link"
+                       className="inline-flex items-center px-4 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors text-sm font-medium"
+                       data-testid="button-bound">
+                      Venha ver →
+                    </a> */}
+                  </div>
+                </div>
+              </div>
               
-              {/* Project 4: Power Automate */}
+              {/* Project: Power Automate */}
               <div className="bg-card border border-border rounded-xl overflow-hidden hover:shadow-lg transition-shadow" data-testid="card-project-power-automate">
                 <img src={`${base}img/projects/power_Automate.png`}
                      alt="Automações power automate" 
@@ -308,7 +330,7 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Project 5: Dashbords de BI */}
+              {/* Project: Dashbords de BI */}
               <div className="bg-card border border-border rounded-xl overflow-hidden hover:shadow-lg transition-shadow" data-testid="card-project-dashboards">
                 <img src={`${base}img/projects/dashboards.png`}
                      alt="Dashboards de BI" 
@@ -330,7 +352,7 @@ export default function Home() {
                 </div>
               </div>
               
-              {/* Project 6: Analytics em Excel */}
+              {/* Project: Analytics em Excel */}
               <div className="bg-card border border-border rounded-xl overflow-hidden hover:shadow-lg transition-shadow" data-testid="card-project-analytics">
                 <img src={`${base}img/projects/analytics.png`}
                      alt="Analytics em Excel" 
@@ -352,7 +374,7 @@ export default function Home() {
                 </div>
               </div>
               
-              {/* Project 6: DBA e Queries */}
+              {/* Project: DBA e Queries */}
               <div className="bg-card border border-border rounded-xl overflow-hidden hover:shadow-lg transition-shadow" data-testid="card-project-sql">
                 <img src={`${base}img/projects/sql.png`}
                      alt="SQL Queries e DBA" 
